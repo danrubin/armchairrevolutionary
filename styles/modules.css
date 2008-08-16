@@ -222,9 +222,9 @@ edited: 2008-08-16
 	background-color:transparent;
 }
 .mod-tasks a.task-refresh {
-	float:right;
+	display:block;
 	height:18px;
-	margin:-25px -5px 0 10px;
+	margin:-25px -5px 0 55px;
 	padding:0 6px 0 18px;
 	background:#0e9bd5 url(images/icon-refresh.png) no-repeat 5px;
 	font-size:9px;
@@ -372,6 +372,62 @@ edited: 2008-08-16
 }
 .mod-tasks a.task-expand:hover span {
 	background-image:url(images/icon-arrow-right-white.png);
+}
+.task-details {
+	display:none;
+}
+
+
+/* module: profile tasks expanded */
+.mod-tasks ul li.expanded {
+	height:75px;
+	margin-right:-15px;
+	margin-bottom:9px;
+	background:#0e9bd5 url(images/bg-task-shadow.png) no-repeat 0 72px;
+}
+.mod-tasks ul li.expanded .task-actions a.task-now {
+	background-color:#32aadb;
+}
+.mod-tasks ul li.expanded .task-actions a.task-now:hover {
+	background-color:#0d8abe;
+}
+.mod-tasks ul li.expanded .task-actions a.task-later:hover {
+	background-color:#0d8abe;
+}
+.mod-tasks ul li.expanded .task-points {
+	border-color:#3eafdd;
+}
+.mod-tasks ul li.expanded .task-hide,
+.mod-tasks ul li.expanded .task-expand {
+	right:15px;
+}
+.mod-tasks ul li.expanded .task-expand {
+	bottom:3px;
+}
+.mod-tasks ul li.expanded a.task-expand span {
+	background-image:url(images/icon-arrow-left-blue.png);
+}
+.mod-tasks ul li.expanded a.task-expand:hover {
+	background-color:#32aadb;
+}
+.mod-tasks ul li.expanded a.task-expand:hover span {
+	background-image:url(images/icon-arrow-left-white.png);
+}
+
+.task-details {
+	position:absolute;
+	top:57px;
+	margin-left:-10px;
+	width:408px;
+	height:243px;
+	background:#0e9bd5 url(images/bg-task-shadow-details.png) no-repeat right;
+	color:#fff;
+}
+off#task1details { display:block; }
+off#task2details { display:block; }
+off#task3details { display:block; }
+#task3details.task-details {
+	background-image:url(images/bg-task-shadow-details-bottom.png);
 }
 
 
