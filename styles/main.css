@@ -1,0 +1,200 @@
+/*
+-----------------------------------------------
+styles for armchairrevolutionary.com
+author: dan rubin
+edited: 2008-08-14
+----------------------------------------------- */
+
+/* import reset, 960.gs and specific stylesheets */
+@import url("reset.css");
+@import url("text.css");
+@import url("960.css");
+@import url("modules.css");
+@import url("messages.css");
+
+
+/* main styles */
+body {
+	background:url(images/bg-body.png) repeat-x;
+	min-width:990px;/* ensures a 20px space on either side of the grid */
+}
+
+a {
+	text-decoration:none;
+}
+
+/* header */
+#header {
+	position:relative;
+	height:144px;
+	margin-bottom:37px;
+}
+#logo {
+	position:absolute;
+	left:0;
+	top:32px;
+}
+#logo a {
+	display:block;
+	width:374px;
+	height:45px;
+	background:url(images/logo.png) no-repeat;
+	text-indent:-9999px;
+}
+#header h2 {
+	position:absolute;
+	left:0;
+	bottom:5px;
+	color:#d1d1d1;
+	font-size:30px;
+	line-height:1;
+	letter-spacing:-1px;
+}
+#site-nav {
+	position:absolute;
+	right:0;
+	top:32px;
+	margin:0;
+	font-size:12px;
+}
+#site-nav li {
+	display:inline;
+	margin:0 2px 0 0;
+	padding:2px 5px 0 0;
+	border-right:1px solid #e7e7e7;
+}
+#site-nav li.last {
+	border:none;
+	margin:0;
+	padding:0;
+}
+#site-nav a {
+	color:#ccc;
+	padding:1px;
+}
+#site-nav a:hover {
+	color:#b3b3b3;
+	border-bottom:2px solid #f5f5f5;
+}
+
+
+/* user nav - uses the navigation matrix method: one bg image for all elements */
+#user-nav {
+	position:absolute;
+	right:0;
+	bottom:0;
+	margin:0;
+	width:305px; /* when adding new languages, this width must be adjusted to match the total of the anchor widths plus 3x left margin on the li's */
+	list-style:none;
+}
+#user-nav li {
+	float:left;
+	margin:0 0 0 6px;
+}
+#user-nav li a {
+	float:left;
+	height:42px;
+	text-indent:-9999px;
+	background-image:url(images/nav-matrix.png);
+	background-repeat:no-repeat;
+}
+#user-nav li#nav-contacts a {
+	width:106px;
+	background-position:0 0;
+}
+#user-nav li#nav-contacts a:hover,
+#user-nav li#nav-contacts.current a {
+	background-position:0 -42px;
+}
+#user-nav li#nav-settings a {
+	width:98px;
+	background-position:-106px 0;
+}
+#user-nav li#nav-settings a:hover,
+#user-nav li#nav-settings.current a {
+	background-position:-106px -42px;
+}
+#user-nav li#nav-profile a {
+	width:83px;
+	background-position:-204px 0;
+}
+#user-nav li#nav-profile a:hover,
+#user-nav li#nav-profile.current a {
+	background-position:-204px -42px;
+}
+
+
+/* content */
+#content {
+	color:#888;
+}
+
+
+/* footer */
+#footer {
+	background:url(images/bg-footer.png) repeat-x bottom;
+	margin:40px 0 0;
+	padding:0 0 27px;
+}
+#footer2 {
+	position:relative;
+	width:950px;/* this is 10px narrower than the gridded section to account for the 5px left/right margins on the grid */
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#footer-about {
+	float:left;
+	width:470px;
+	background-color:#f7f7f7;
+	border-top:6px solid #f5f5f5;
+}
+#footer-about h2 {
+	margin:4px 0 0 13px;/* compensates visually for the bg image offset */
+	width:221px;
+	height:18px;
+	background:url(images/hdr-footer-about.png) no-repeat;
+	text-indent:-9999px;
+}
+#footer-about p {
+	margin:0;
+	padding:0 15px 10px;
+	font-size:11px;
+	line-height:13px;
+	color:#999;
+}
+
+
+/* nav links in the footer */
+#footer-nav {
+	position:absolute;
+	right:0;
+	bottom:8px;
+	width:470px;
+	color:#ccc;
+	font-size:12px;
+	text-align:right;
+}
+#footer-nav p,
+#footer-nav ul {
+	display:inline;
+	margin:0;
+}
+#footer-nav li {
+	display:inline;
+	margin:0 0 0 2px;
+	padding:2px 0 0 5px;
+	border-left:1px solid #e7e7e7;
+}
+#footer-nav xli.last {
+	margin:0;
+	padding:0;
+}
+#footer-nav a {
+	color:#ccc;
+	padding:1px;
+}
+#footer-nav a:hover {
+	color:#b3b3b3;
+	border-bottom:2px solid #f5f5f5;
+}
