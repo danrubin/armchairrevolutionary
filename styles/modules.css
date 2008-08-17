@@ -21,7 +21,7 @@ edited: 2008-08-17
 	background-color:#f7f7f7;
 	font-size:15px;
 	line-height:30px;
-	color:#666;
+	color:#999;
 	border-top:6px solid #f5f5f5;
 }
 .mod-message {	
@@ -597,7 +597,7 @@ off#task3details { display:block; }
 	font-weight:bold;
 	line-height:18px;
 }
-.news-feed .news-category { /* overrides the default link color set above */
+.news-feed a.news-category { /* overrides the default link color set above */
 	color:#d9d9d9;
 	text-transform:uppercase;
 }
@@ -714,12 +714,16 @@ p.news-morenews {
 	border-radius:3px;
 	white-space:nowrap;
 }
-.status-wrapper { /* this is the LI that encloses each project's data */
+.status-wrapper { /* this is the LI that encloses each project's data on the user profile */
 	position:relative;
 	height:100px;
 	margin-bottom:10px;
 	padding-bottom:10px;
 	border-bottom:1px solid #f0f0f0;
+}
+.status-wrapper-single { /* this is the LI that encloses the timeline on the project detail page */
+	position:relative;
+	height:70px;
 }
 .status-summary {
 	position:absolute;
@@ -727,6 +731,9 @@ p.news-morenews {
 	margin:0 0 0 -10px;
 	padding-top:10px;
 	font-weight:bold;
+}
+.status-wrapper-single .status-summary {
+	bottom:0;
 }
 .status-summary li {
 	float:left;
