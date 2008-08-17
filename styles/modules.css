@@ -414,6 +414,17 @@ edited: 2008-08-16
 	background-image:url(images/icon-arrow-left-white.png);
 }
 
+/* ************************************************************************** */
+/* temporary styles - these will eventually be set dynamically via javascript */
+/* ************************************************************************** */
+#task1details { display:block; }
+off#task2details { display:block; }
+off#task3details { display:block; }
+#task3details.task-details {
+	background-image:url(images/bg-task-shadow-details-bottom.png);
+}
+
+
 .task-details {
 	position:absolute;
 	top:57px;
@@ -423,11 +434,51 @@ edited: 2008-08-16
 	background:#0e9bd5 url(images/bg-task-shadow-details.png) no-repeat right;
 	color:#fff;
 }
-off#task1details { display:block; }
-off#task2details { display:block; }
-off#task3details { display:block; }
-#task3details.task-details {
-	background-image:url(images/bg-task-shadow-details-bottom.png);
+.task-details a {
+	font-weight:bold;
+	color:#fff;
+}
+.task-details h4 {
+	font-size:9px;
+	text-transform:uppercase;
+}
+.task-details-toolbar {
+	display:block;
+	width:374px;
+	height:27px;
+	margin:0 0 10px 20px;
+	border-bottom:1px solid #3eafdd;
+	font-size:9px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.task-details-toolbar p {
+	margin:0;
+}
+.task-details-toolbar .add-favorite {
+	float:right;
+	margin-top:6px;
+	padding-top:4px;
+	padding-right:15px;
+	background:url(images/icon-favorite-blue.png) no-repeat right center;
+	text-align:right;
+}
+.task-details-a,
+.task-details-b {
+	height:192px;
+	margin-left:20px;
+	xbackground:red;
+	font-size:12px;
+	line-height:15px;
+}
+.task-details-b {
+	margin-left:13px;/* required for visual alignment of the columns */
+	padding-left:15px;
+	border-left:1px solid #27a5d9;
+}
+.task-details-a p,
+.task-details-b p {
+	margin-bottom:12px;
 }
 
 
