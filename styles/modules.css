@@ -2,7 +2,7 @@
 -----------------------------------------------
 module styles for armchairrevolutionary.com
 author: dan rubin
-edited: 2008-08-16
+edited: 2008-08-17
 ----------------------------------------------- */
 
 /* module defaults */
@@ -31,6 +31,9 @@ edited: 2008-08-16
 	font-size:12px;
 	color:#fff;
 	overflow:hidden;
+}
+.mod-message a {
+	color:#fff;
 }
 .mod-message em {
 	float:left;
@@ -506,29 +509,29 @@ off#task3details { display:block; }
 .mod-mystatus ul li {
 	margin:0;
 }
-.status-level {
+.mystatus-level {
 	padding-right:17px;
 	border-right:2px solid #5dc7f3;
 }
-.status-points {
+.mystatus-points {
 	padding-left:17px;
 }
-.status-level dd,
-.status-points dd {
+.mystatus-level dd,
+.mystatus-points dd {
 	font-size:72px;
 }
-.status-details {
+.mystatus-details {
 	float:right;
 	margin-top:5px;
 	font-size:12px;
 	font-weight:bold;
 	line-height:18px;
 }
-.status-details strong {
+.mystatus-details strong {
 	padding:2px 2px 1px 3px;
 	background-color:#2a94c0;
 }
-.status-summary {
+.mystatus-summary {
 	position:absolute;
 	bottom:10px;
 	width:360px;
@@ -536,15 +539,15 @@ off#task3details { display:block; }
 	padding-top:10px;
 	border-top:1px solid #5dc7f3;
 }
-.status-summary li {
-	padding-left:8px;
+.mystatus-summary li {
 	float:left;
 	width:112px;
+	padding-left:8px;
 }
-.status-summary dl {
+.mystatus-summary dl {
 	width:100%;
 }
-.status-summary dd {
+.mystatus-summary dd {
 	position:relative;
 	margin-top:-6px;
 	padding-top:12px;
@@ -552,10 +555,10 @@ off#task3details { display:block; }
 	line-height:36px;
 	border-right:2px solid #5dc7f3;
 }
-.status-summary li.last dd {
+.mystatus-summary li.last dd {
 	border:none;
 }
-.status-summary dd a {
+.mystatus-summary dd a {
 	position:absolute;
 	right:6px;
 	bottom:2px;
@@ -563,6 +566,195 @@ off#task3details { display:block; }
 	font-size:9px;
 	line-height:9px;
 	letter-spacing:normal;
+}
+
+
+/* module: news feed */
+.news-feed dl {
+	margin:-8px 0 0;
+	color:#737373;
+	line-height:13px;
+}
+.news-feed dt {
+	padding-top:8px;
+	font-size:12px;
+	font-weight:bold;
+	
+}
+.news-feed dd {
+	padding-bottom:5px;
+	border-bottom:1px solid #f0f0f0;
+	font-size:11px;
+}
+.news-feed p {
+	margin:0;
+}
+.news-feed .mod-content a {
+	color:#bfbfbf;
+}
+.news-meta {
+	font-size:9px;
+	font-weight:bold;
+	line-height:18px;
+}
+.news-feed .news-category { /* overrides the default link color set above */
+	color:#d9d9d9;
+	text-transform:uppercase;
+}
+.news-readmore {
+	float:right;
+	text-transform:uppercase;
+}
+p.news-morenews {
+	margin:10px 0 0;
+	line-height:14px;
+}
+.news-morenews a {
+	padding:3px 0 0px 12px;
+	background:url(images/icon-document-gray.png) no-repeat;
+	font-size:9px;
+	color:#bfbfbf;
+}
+
+/* module: project status */
+.mod-projectstatus ul {
+	margin-bottom:0;
+	list-style:none;
+}
+.mod-projectstatus ul li {
+	margin-left:0;
+}
+.mod-projectstatus h4 {
+	font-size:15px;
+	color:#666;
+}
+.mod-projectstatus h5 {
+	float:left;
+	margin-right:4px;
+	color:#999;
+	font-size:9px;
+	text-transform:uppercase;
+}
+.mod-projectstatus h6 {
+	float:left;
+	margin-left:4px;
+	margin-right:-4px;
+	color:#999;
+	font-size:12px;
+}
+.status-timeline-wrapper {
+	margin-top:10px;
+	height:14px;
+	line-height:16px;
+}
+.status-timeline {
+	float:left;
+	margin-top:5px;
+	width:790px;
+	height:6px;
+	background-color:#f0f0f0;
+}
+.status-timeline ul {
+	height:12px;
+	margin-top:-6px;
+	background:url(images/bg-projectstatus-timeline.png) repeat-x;
+}
+/* styles control the width of the UL that contains the milestone markers */
+.status-timeline ul.status-progress-10 { width:7px; }
+.status-timeline ul.status-progress-20 { width:94px; }
+.status-timeline ul.status-progress-30 { width:181px; }
+.status-timeline ul.status-progress-40 { width:268px; }
+.status-timeline ul.status-progress-50 { width:355px; }
+.status-timeline ul.status-progress-60 { width:442px; }
+.status-timeline ul.status-progress-70 { width:529px; }
+.status-timeline ul.status-progress-80 { width:616px; }
+.status-timeline ul.status-progress-90 { width:703px; }
+.status-timeline ul.status-progress-100 { width:790px; }
+.status-timeline ul li {
+	float:left;
+	width:3px;
+	height:12px;
+	margin-top:-1px;
+	margin-left:84px;
+	background-color:#788868;
+	border-width:1px 0;
+	border-style:solid;
+	border-color:#989898;
+}
+.status-timeline ul li.status-milestone1 { margin-left:2px; }
+.status-timeline ul li a {
+	position:relative;
+	display:block;
+	width:5px;
+	height:14px;
+	margin-top:-1px;
+	margin-left:-1px;
+}
+.status-timeline ul li a span {
+	display:none;
+}
+.status-timeline ul li a:hover {
+	height:17px;
+	margin-top:-4px;
+	background:#333 url(images/bg-projectstatus-timeline-hover.png) no-repeat;
+	opacity:.8;
+	color:#fff;
+	font-size:11px;
+	font-weight:bold;
+}
+.status-timeline ul li a:hover span {
+	position:absolute;
+	left:-4px;
+	top:-21px;
+	display:block;
+	padding:3px 5px 2px;
+	background:black;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	white-space:nowrap;
+}
+.status-wrapper { /* this is the LI that encloses each project's data */
+	position:relative;
+	height:100px;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #f0f0f0;
+}
+.status-summary {
+	position:absolute;
+	bottom:10px;
+	margin:0 0 0 -10px;
+	padding-top:10px;
+	font-weight:bold;
+}
+.status-summary li {
+	float:left;
+	padding-left:10px;
+}
+.status-summary dl {
+	width:100%;
+	margin:0;
+}
+.status-summary dt {
+	color:#999;
+	font-size:9px;
+	line-height:9px;
+	text-transform:uppercase;
+}
+.status-summary dd {
+	position:relative;
+	margin-top:-10px;
+	padding-top:10px;
+	padding-right:10px;
+	color:#ccc;
+	font-size:28px;
+	line-height:1;
+	letter-spacing:-1px;
+	border-right:2px solid #f0f0f0;
+}
+.status-summary li.last dd {
+	border:none;
 }
 
 
