@@ -2,7 +2,7 @@
 -----------------------------------------------
 module styles for armchairrevolutionary.com
 author: dan rubin
-edited: 2008-08-17
+edited: 2008-08-21
 ----------------------------------------------- */
 
 /* module defaults */
@@ -470,7 +470,6 @@ off#task3details { display:block; }
 .task-details-b {
 	height:192px;
 	margin-left:20px;
-	xbackground:red;
 	font-size:12px;
 	line-height:15px;
 }
@@ -569,6 +568,54 @@ off#task3details { display:block; }
 }
 
 
+/* module: project details */
+.project-details h4 {
+	font-size:9px;
+	text-transform:uppercase;
+}
+.project-details-a {
+	margin:0 0 -20px;
+	line-height:15px;
+}
+.project-details-b {
+	float:left;
+	width:160px;
+	margin-left:10px;
+	padding-left:15px;
+	border-left:1px solid #bfe499;
+}
+.project-details-b ul {
+	margin:0;
+}
+.project-details-b ul li {
+	list-style:none;
+	margin:0;
+	font-weight:bold;
+	line-height:17px;
+}
+
+
+/* module: photo and video thumbnails */
+ul.photo-thumbnails,
+ul.video-thumbnails {
+	margin:0;
+}
+ul.photo-thumbnails li,
+ul.video-thumbnails li {
+	list-style:none;
+	float:left;
+	margin:0 10px 0 5px;
+}
+ul.photo-thumbnails li a,
+ul.video-thumbnails li a {
+	float:left;
+}
+ul.photo-thumbnails li a:hover img,
+ul.video-thumbnails li a:hover img {
+	margin:-3px;
+	border:3px solid #ccc;
+}
+
 /* module: news feed */
 .news-feed dl {
 	margin:-8px 0 0;
@@ -579,7 +626,6 @@ off#task3details { display:block; }
 	padding-top:8px;
 	font-size:12px;
 	font-weight:bold;
-	
 }
 .news-feed dd {
 	padding-bottom:5px;
@@ -591,6 +637,9 @@ off#task3details { display:block; }
 }
 .news-feed .mod-content a {
 	color:#bfbfbf;
+}
+.news-feed .mod-content dt a {
+	color:#888;
 }
 .news-meta {
 	font-size:9px;

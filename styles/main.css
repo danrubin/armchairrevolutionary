@@ -2,7 +2,7 @@
 -----------------------------------------------
 styles for armchairrevolutionary.com
 author: dan rubin
-edited: 2008-08-14
+edited: 2008-08-21
 ----------------------------------------------- */
 
 /* import reset, 960.gs and specific stylesheets */
@@ -21,6 +21,10 @@ body {
 
 a {
 	text-decoration:none;
+}
+
+img {
+	display:block;
 }
 
 /* header */
@@ -130,6 +134,9 @@ a {
 }
 .row {
 	position:relative;
+}
+.sponsor-bar {
+	margin-bottom:10px;
 }
 
 
