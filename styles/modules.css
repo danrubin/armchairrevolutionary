@@ -2,7 +2,7 @@
 -----------------------------------------------
 module styles for armchairrevolutionary.com
 author: dan rubin
-edited: 2008-08-21
+edited: 2008-09-22
 ----------------------------------------------- */
 
 /* module defaults */
@@ -195,6 +195,7 @@ edited: 2008-08-21
 	font-size:11px;
 	font-weight:normal;
 	color:#999;
+	white-space:nowrap;
 }
 .mod-form select {
 	
@@ -206,14 +207,196 @@ edited: 2008-08-21
 }
 .mod-form button {
 	margin-top:-2px;
+	padding:1px 12px 0;
 	height:24px;
+	background:url(images/bg-button-submit.png) repeat-x;
+	border:1px solid #b3b3b3;
 	font-family:inherit;
 	font-size:13px;
 	font-weight:bold;
 	line-height:24px;
 	color:#666;
 	vertical-align:middle;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	cursor:pointer;
 }
+.mod-form button:hover {
+	color:#444;
+}
+
+/* styles for individual forms */
+form#search-contacts input.text {
+	width:260px;
+}
+form#invite input.text {
+	width:215px;
+}
+
+
+/* module: contacts */
+.mod-contacts {
+	margin:10px 0;
+	padding:18px 0 15px;
+	border-color:#f2f2f2;
+	border-width:1px 0;
+	border-style:solid;
+}
+.mod-contacts ul {
+	margin:0;
+}
+.mod-contacts ul#contact-grid {
+	margin-right:-10px;
+}
+.mod-contacts ul li {
+	position:relative;
+	list-style:none;
+	margin:0;
+	background:#f5f5f5;
+}
+.mod-contacts ul li:hover {
+	background:#f2f2f2;
+}
+.mod-contacts ul#contact-list li {
+	clear:left;
+	height:36px;
+	margin-bottom:3px;
+	padding-left:36px;
+}
+.mod-contacts ul#contact-grid li {
+	float:left;
+	width:406px;
+	height:64px;
+	margin-right:10px;
+	margin-bottom:3px;
+	padding-left:64px;
+}
+.mod-contacts img {
+	position:absolute;
+	left:5px;
+	top:5px;
+	border-color:#fff;
+	border-style:solid;
+}
+.mod-contacts ul#contact-list img {
+	border-width:1px;
+}
+.mod-contacts ul#contact-grid img {
+	border-width:3px;
+}
+.mod-contacts h4 {
+	float:left;
+	margin-top:8px;
+	color:#333;
+	font-size:15px;
+}
+.mod-contacts h4 em {
+	color:#666;
+	font-size:12px;
+	font-style:normal;
+}
+.mod-contacts ul#contact-list .contact-stats {
+	width:25%;
+	margin:0 auto;
+}
+.mod-contacts ul#contact-grid .contact-stats {
+	position:absolute;
+	bottom:5px;
+}
+.mod-contacts dl {
+	float:left;
+	position:relative;
+	margin:0 18px 0 0;
+}
+.mod-contacts ul#contact-list dl {
+	/* 36px total: */
+	height:29px;
+	margin-top:7px;
+}
+.mod-contacts dt {
+	color:#999;
+	font-size:9px;
+	font-weight:bold;
+	line-height:9px;
+	text-transform:uppercase;
+}
+.mod-contacts dd {
+	color:#ccc;
+	font-size:18px;
+	font-weight:bold;
+	line-height:18px;
+}
+.mod-contacts .contact-actions {
+	position:absolute;
+	right:5px;
+	top:5px;
+	margin:0;
+}
+.mod-contacts button {
+	float:left;
+	margin-left:5px;
+	padding-left:7px;
+	padding-right:7px;
+	height:26px;
+	background:#fafafa;
+	border:none;
+	color:#999;
+	font-family:inherit;
+	font-size:9px;
+	font-weight:bold;
+	line-height:26px;
+	text-transform:uppercase;
+	cursor:pointer;
+}
+.mod-contacts button:hover {
+	background:#fff;
+}
+
+
+/* module: pagination */
+.mod-pagination {
+	margin-top:10px;
+	text-align:center;
+}
+.mod-pagination p,
+.mod-pagination ul,
+.mod-pagination ul li {
+	margin:0;
+	display:inline;
+}
+.mod-pagination p a {
+	padding:1px;
+	color:#b4b4b4;
+	font-size:11px;
+}
+.mod-pagination p a:hover {
+	border-bottom:2px solid #f3f3f3;
+	color:#999;
+}
+.mod-pagination ul {
+	margin:0 20px;
+}
+.mod-pagination ul li {
+	margin-right:1px;
+}
+.mod-pagination ul li.current {
+	padding:5px 6px 3px;
+	color:#10aded;
+	font-weight:bold;
+}
+.mod-pagination ul li a {
+	padding:5px 6px 3px;
+	background:#ededed;
+	color:#999;
+	font-weight:bold;
+	line-height:19px;
+}
+.mod-pagination ul li a:hover {
+	background:#e4e4e4;
+}
+
+
 
 
 /* module: profile tasks */

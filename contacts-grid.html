@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Language" content="en-us" />
+	<meta name="robots" content="all" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+
+	<meta name="author" content="Dan Rubin" />
+	<meta name="Copyright" content="Copyright (c) 2008 Armchair Revolutionary" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<title>Armchair Revolutionary | Generic Page Template</title>
+	
+	<link rel="stylesheet" type="text/css" media="all" href="styles/main.css" />
+</head>
+
+<body>
+	<div class="container_16 clearfix">
+		<div id="header" class="grid_16">
+			<h1 id="logo"><a href="" title="to the homepage!">Armchair Revolutionary</a></h1>
+		
+			<!-- page title -->
+			<h2>Terms of Service</h2>
+		
+			<ul id="site-nav">
+				<li><a href="">About the Revolution</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="">Invite your friends</a></li>
+				<li><a href="">Help</a></li>
+				<li class="last"><a href="">Log out</a></li>
+			</ul>
+		
+			<ul id="user-nav">
+				<li id="nav-contacts"><a href="">Contacts</a></li>
+				<li id="nav-settings"><a href="">Settings</a></li>
+				<li id="nav-profile"><a href="">Profile</a></li>
+			</ul>
+		</div><!-- #header -->
+		
+		<div id="content">
+			
+			<!-- search and invite forms -->
+			<div class="row grid_16">
+				<!-- begin left column -->
+				<div class="grid_9 alpha">
+                    
+                    <!-- module: form -->
+					<div class="module mod-form">
+						<h3>
+							<span class="mod-title">Search</span>
+						</h3>
+						<div class="mod-content-wrapper">
+							<div class="mod-content">
+								<form id="search-contacts" action="default_submit" method="post" accept-charset="utf-8">
+									<p>
+										<label for="search-type">Find:</label>
+										<select name="search-type" id="search-type">
+											<option value="option1">My Friends</option>
+											<option value="option2">Everybody</option>
+										</select>
+									</p>
+								
+									<p>
+										<label for="search-keywords" class="note">Search by email address or name</label>
+										<input type="text" name="search-keywords" value="" id="search-keywords" class="text" />
+									</p>
+								
+									<button type="submit">Search &raquo;</button>
+								</form>
+							</div>
+						</div>
+					</div><!-- .module -->
+                    
+				</div><!-- end left column -->
+				
+				<!-- begin right column -->
+				<div class="grid_7 omega">
+                    
+                    <!-- module: form -->
+					<div class="module mod-form">
+						<h3>
+							<span class="mod-title">Invite new members!</span>
+						</h3>
+						<div class="mod-content-wrapper">
+							<div class="mod-content">
+								<form id="invite" action="default_submit" method="post" accept-charset="utf-8">
+									<p>
+										<label for="email-addresses">Invite:</label>
+									</p>
+									<p>
+										<label for="email-addresses" class="note">Enter email addresses separated by commas</label>
+										<input type="text" name="email-addresses" value="" id="email-addresses" class="text" />
+									</p>
+								
+									<button type="submit">Continue &raquo;</button>
+								</form>
+							</div>
+						</div>
+					</div><!-- .module -->
+                    
+				</div><!-- end right column -->
+			</div><!-- .row .grid_16 -->
+			
+			<!-- contact list: generated data is identical in list and grid views,
+			    with the exception of the avatar size (the image reference needs
+			    to change when switching views); all other changes are accomplished
+			    by changing the ID on the UL within .mod-contacts. -->
+			<div class="row grid_16">
+			    
+			    <!-- module: contacts -->
+				<div class="module mod-contacts">
+					<ul id="contact-grid" class="clearfix">
+					    <li>
+   					       <h4>Jane Doe <em>(janedoe27)</em></h4>
+   					       <img src="images/avatar-medium-female.jpg" width="48" height="48" alt="" />
+   					       <div class="contact-stats">
+       					       <dl>
+       					           <dt>Level</dt>
+       					           <dd>03</dd>
+       					       </dl>
+       					       <dl>
+        					       <dt>Score</dt>
+      					           <dd>2075</dd>
+      					       </dl>
+      					       <dl>
+      					           <dt>Tasks</dt>
+      					           <dd>68</dd>
+      					       </dl>
+      					   </div>
+  					       <p class="contact-actions">
+  					           <button class="message-contact">Message</button>
+  					           <button class="remove-contact">Remove</button>
+  					       </p>
+   					   </li>
+   					    <li>
+   					       <h4>Jane Doe <em>(janedoe27)</em></h4>
+   					       <img src="images/avatar-medium-female.jpg" width="48" height="48" alt="" />
+   					       <div class="contact-stats">
+       					       <dl>
+       					           <dt>Level</dt>
+       					           <dd>03</dd>
+       					       </dl>
+       					       <dl>
+        					       <dt>Score</dt>
+      					           <dd>2075</dd>
+      					       </dl>
+      					       <dl>
+      					           <dt>Tasks</dt>
+      					           <dd>68</dd>
+      					       </dl>
+      					   </div>
+  					       <p class="contact-actions">
+  					           <button class="message-contact">Message</button>
+  					           <button class="remove-contact">Remove</button>
+  					       </p>
+   					   </li>
+   					    <li>
+   					       <h4>Jane Doe <em>(janedoe27)</em></h4>
+   					       <img src="images/avatar-medium-female.jpg" width="48" height="48" alt="" />
+   					       <div class="contact-stats">
+       					       <dl>
+       					           <dt>Level</dt>
+       					           <dd>03</dd>
+       					       </dl>
+       					       <dl>
+        					       <dt>Score</dt>
+      					           <dd>2075</dd>
+      					       </dl>
+      					       <dl>
+      					           <dt>Tasks</dt>
+      					           <dd>68</dd>
+      					       </dl>
+      					   </div>
+  					       <p class="contact-actions">
+  					           <button class="message-contact">Message</button>
+  					           <button class="remove-contact">Remove</button>
+  					       </p>
+   					   </li>
+   					    <li>
+   					       <h4>Jane Doe <em>(janedoe27)</em></h4>
+   					       <img src="images/avatar-medium-female.jpg" width="48" height="48" alt="" />
+   					       <div class="contact-stats">
+       					       <dl>
+       					           <dt>Level</dt>
+       					           <dd>03</dd>
+       					       </dl>
+       					       <dl>
+        					       <dt>Score</dt>
+      					           <dd>2075</dd>
+      					       </dl>
+      					       <dl>
+      					           <dt>Tasks</dt>
+      					           <dd>68</dd>
+      					       </dl>
+      					   </div>
+  					       <p class="contact-actions">
+  					           <button class="message-contact">Message</button>
+  					           <button class="remove-contact">Remove</button>
+  					       </p>
+   					   </li>
+   					    <li>
+   					       <h4>Jane Doe <em>(janedoe27)</em></h4>
+   					       <img src="images/avatar-medium-female.jpg" width="48" height="48" alt="" />
+   					       <div class="contact-stats">
+       					       <dl>
+       					           <dt>Level</dt>
+       					           <dd>03</dd>
+       					       </dl>
+       					       <dl>
+        					       <dt>Score</dt>
+      					           <dd>2075</dd>
+      					       </dl>
+      					       <dl>
+      					           <dt>Tasks</dt>
+      					           <dd>68</dd>
+      					       </dl>
+      					   </div>
+  					       <p class="contact-actions">
+  					           <button class="message-contact">Message</button>
+  					           <button class="remove-contact">Remove</button>
+  					       </p>
+   					   </li>
+   					    <li>
+   					       <h4>Jane Doe <em>(janedoe27)</em></h4>
+   					       <img src="images/avatar-medium-female.jpg" width="48" height="48" alt="" />
+   					       <div class="contact-stats">
+       					       <dl>
+       					           <dt>Level</dt>
+       					           <dd>03</dd>
+       					       </dl>
+       					       <dl>
+        					       <dt>Score</dt>
+      					           <dd>2075</dd>
+      					       </dl>
+      					       <dl>
+      					           <dt>Tasks</dt>
+      					           <dd>68</dd>
+      					       </dl>
+      					   </div>
+  					       <p class="contact-actions">
+  					           <button class="message-contact">Message</button>
+  					           <button class="remove-contact">Remove</button>
+  					       </p>
+   					   </li>
+   					    <li>
+   					       <h4>Jane Doe <em>(janedoe27)</em></h4>
+   					       <img src="images/avatar-medium-female.jpg" width="48" height="48" alt="" />
+   					       <div class="contact-stats">
+       					       <dl>
+       					           <dt>Level</dt>
+       					           <dd>03</dd>
+       					       </dl>
+       					       <dl>
+        					       <dt>Score</dt>
+      					           <dd>2075</dd>
+      					       </dl>
+      					       <dl>
+      					           <dt>Tasks</dt>
+      					           <dd>68</dd>
+      					       </dl>
+      					   </div>
+  					       <p class="contact-actions">
+  					           <button class="message-contact">Message</button>
+  					           <button class="remove-contact">Remove</button>
+  					       </p>
+   					   </li>
+   					    <li>
+   					       <h4>Jane Doe <em>(janedoe27)</em></h4>
+   					       <img src="images/avatar-medium-female.jpg" width="48" height="48" alt="" />
+   					       <div class="contact-stats">
+       					       <dl>
+       					           <dt>Level</dt>
+       					           <dd>03</dd>
+       					       </dl>
+       					       <dl>
+        					       <dt>Score</dt>
+      					           <dd>2075</dd>
+      					       </dl>
+      					       <dl>
+      					           <dt>Tasks</dt>
+      					           <dd>68</dd>
+      					       </dl>
+      					   </div>
+  					       <p class="contact-actions">
+  					           <button class="message-contact">Message</button>
+  					           <button class="remove-contact">Remove</button>
+  					       </p>
+   					   </li>
+   					    <li>
+   					       <h4>Jane Doe <em>(janedoe27)</em></h4>
+   					       <img src="images/avatar-medium-female.jpg" width="48" height="48" alt="" />
+   					       <div class="contact-stats">
+       					       <dl>
+       					           <dt>Level</dt>
+       					           <dd>03</dd>
+       					       </dl>
+       					       <dl>
+        					       <dt>Score</dt>
+      					           <dd>2075</dd>
+      					       </dl>
+      					       <dl>
+      					           <dt>Tasks</dt>
+      					           <dd>68</dd>
+      					       </dl>
+      					   </div>
+  					       <p class="contact-actions">
+  					           <button class="message-contact">Message</button>
+  					           <button class="remove-contact">Remove</button>
+  					       </p>
+   					   </li>
+   					    <li>
+   					       <h4>Jane Doe <em>(janedoe27)</em></h4>
+   					       <img src="images/avatar-medium-female.jpg" width="48" height="48" alt="" />
+   					       <div class="contact-stats">
+       					       <dl>
+       					           <dt>Level</dt>
+       					           <dd>03</dd>
+       					       </dl>
+       					       <dl>
+        					       <dt>Score</dt>
+      					           <dd>2075</dd>
+      					       </dl>
+      					       <dl>
+      					           <dt>Tasks</dt>
+      					           <dd>68</dd>
+      					       </dl>
+      					   </div>
+  					       <p class="contact-actions">
+  					           <button class="message-contact">Message</button>
+  					           <button class="remove-contact">Remove</button>
+  					       </p>
+   					   </li>
+					</ul>
+				</div><!-- .module -->
+			    
+			</div><!-- .row .grid_16 -->
+			
+			<!-- pagination -->
+			<div class="row grid_16">
+			    
+			    <!-- module: pagination -->
+				<div class="module mod-pagination">
+				    <p id="previous-page"><a href="">&laquo; Previous page</a></p>
+					<ul>
+					   <li class="current">1</li>
+					   <li><a href="">2</a></li>
+					   <li><a href="">3</a></li>
+					   <li><a href="">4</a></li>
+					   <li><a href="">5</a></li>
+					   <li><a href="">6</a></li>
+					   <li><a href="">7</a></li>
+					   <li><a href="">8</a></li>
+					   <li><a href="">9</a></li>
+					   <li><a href="">10</a></li>
+					</ul>
+					<p id="next-page"><a href="">Next page &raquo;</a></p>
+				</div><!-- .module -->
+			    
+			</div><!-- .row .grid_16 -->
+			
+		</div><!-- #content -->
+		
+	</div><!-- .container_16 -->
+	
+	<div id="footer">
+		<div id="footer2" class="clearfix">
+			<div id="footer-about">
+				<h2>About Armchair Revolutionary</h2>
+				<p>Armchair Revolutionary develops software and related technologies for crowdsourcing, task management, and information management. Our first software product, Armrev1.0, will be launching Spring 2008. For more details or to receive updates, please register using the online form.</p>
+			</div>
+			
+			<div id="footer-nav">
+				<p id="copyright">Copyright &copy;2007-8 <a href="">The Hollywood Hill, LLP</a></p>
+				<ul>
+					<li><a href="">Contact</a></li>
+					<li class="last"><a href="">Legal</a></li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- #footer -->
+</body>
+</html>
