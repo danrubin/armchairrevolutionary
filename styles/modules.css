@@ -2,7 +2,7 @@
 -----------------------------------------------
 module styles for armchairrevolutionary.com
 author: dan rubin
-edited: 2008-09-22
+edited: 2008-10-20
 ----------------------------------------------- */
 
 /* module defaults */
@@ -436,8 +436,13 @@ form#invite input.text {
 	position:absolute;
 	left:194px;
 	top:14px;
+	width:275px;
 	height:46px;
 	font-weight:bold;
+	/* the following clips the contained text so it doesn't wrap or extend beyond the container. */
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
 }
 .mod-tasks dt {
 	margin-bottom:1px;
@@ -488,6 +493,9 @@ form#invite input.text {
 	font-size:9px;
 	text-transform:uppercase;
 }
+/* hacks to fix icon position in Mozilla/Firefox */
+.mod-tasks .task-actions a.task-later, x:-moz-any-link {background-position:11px 6px;} /*styles for Firefox 2.0 here*/
+.mod-tasks .task-actions a.task-later, x:-moz-any-link, x:default {background-position:11px 5px;} /*styles for Firefox 3.0 and newer*/
 .mod-tasks .task-actions a.task-later:hover {
 	background-color:#0fa8e6;
 }
