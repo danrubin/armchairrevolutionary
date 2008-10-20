@@ -2,7 +2,7 @@
 -----------------------------------------------
 styles for armchairrevolutionary.com
 author: dan rubin
-edited: 2008-08-21
+edited: 2008-10-20
 ----------------------------------------------- */
 
 /* import reset, 960.gs and specific stylesheets */
@@ -88,9 +88,9 @@ img {
 	right:0;
 	bottom:0;
 	margin:0;
-	width:305px; /* when adding new languages, this width must be adjusted to match the total of the anchor widths plus 3x left margin on the li's */
 	list-style:none;
 }
+/* the li's and anchors must be floated left in order to maintain the proper item order */
 #user-nav li {
 	float:left;
 	margin:0 0 0 6px;
@@ -118,12 +118,12 @@ img {
 #user-nav li#nav-settings.current a {
 	background-position:-106px -42px;
 }
-#user-nav li#nav-profile a {
-	width:83px;
+#user-nav li#nav-dashboard a {
+	width:120px;
 	background-position:-204px 0;
 }
-#user-nav li#nav-profile a:hover,
-#user-nav li#nav-profile.current a {
+#user-nav li#nav-dashboard a:hover,
+#user-nav li#nav-dashboard.current a {
 	background-position:-204px -42px;
 }
 
